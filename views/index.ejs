@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Microsoft</title>
+</head>
+<body>
+  <div class="menu-btn">
+   <i class="fa fa-bars"></i> 
+  </div>
+<div class="container">
+  <!--nav bar-->
+  <nav class="main-nav">
+    <a href="#"><img src="assets/logo.png" alt="logo" class="logo"></a>
+    <ul class="main-menu">
+      <li><a href="#">Office</a></li>
+      <li><a href="#">Windows</a></li>
+      <li><a href="#">Surface</a></li>
+      <li><a href="#">Xboxs</a></li>
+      <li><a href="#">Deal</a></li>
+      <li><a href="#">Supports</a></li>
+    
+    </ul>
+    <ul class="right-menu">
+      <li>
+        <a href="#"><i class="fas fa-search"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!--showcase-->
+  <header class="showcase">
+    <h2>Surface deals</h2>
+    <p>Lorem ipsdkjecnnnccc</p>
+    <a href="#" class="btn">Shop Now<i class="fas fa-chevron-right"></i></a>
+  </header>
+  <!--home card-->
+  <section class="home-cards">      
+
+      <% for (let i=0; i<result.length; i++) { %>
+        <div>
+            <img src=<%= result[i].link %> alt="card1">
+            <h3><%= result[i].name %></h3>
+            <p><%= result[i].desc %></p>
+            <a href="items/<%= result[i]._id %>">Learn More<i class="fas fa-chevron-right"></i></a>
+        </div>
+      <% } %>
+      <form action="/add" method="get">
+        <button type="submit">Add Item</button>
+      </form>
+
+        <!-- <div>
+          <a href="/add">Add item</a>
+        </div> -->
+
+  </section>
+  <section class="xbox">
+    <div class="content">
+      
+      <h2>Xbox Game Pass Ultimate</h2>
+      <p>Xbox Game Pass Ultimate Live Gold nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+      <a href="#" class="btn">Learn More <i class="fas fa-chevron-right"></i></a>
+    </div>
+    <div class="overlay"></div>
+  </section>
+  <!--home card2-->
+  <section class="home-cards">
+    <div>
+      <img src="assets/card5.png" alt="card5">
+      <h3>New S Pro 7</h3>
+      <p>aaaaaaaaaaaa  </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a></a>
+    
+    </div>
+    <div>
+      <img src="assets/card6.jpg" alt="card6">
+      <h3>New S Pro 7</h3>
+      <p>aaaaaaaaaaaa  </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a></a>
+      </div>
+    <div>
+      <img src="assets/card7.png" alt="card7">
+      <h3>New S Pro 7</h3>
+      <p>aaaaaaaaaaaa  </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a></a>
+      </div>
+    <div>
+      <img src="assets/card8.png" alt="card8">
+      <h3>New S Pro 7</h3>
+      <p>aaaaaaaaaaaa  </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a></a>
+       </div>
+  </section>
+  <section class="carbon">
+    <div class="content">
+      
+      <h2>Commiting to carbon negative</h2>
+      <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+      <a href="#" class="btn">Learn More<i class="fas fa-chevron-right"></i></a>
+  
+    </div>
+    <div class="overlay-carbon"></div>
+
+  </section>
+  <section class="follow">
+    <p>Follow Microsof </p><a href="#"><img src="assets/social-fb.png" alt="fblogo"></a> 
+    <a href="#"><img src="assets/social-linkedin.png" alt="lklogo"></a>
+      <a><img src="assets/social-twitter.png" alt="twlogo"></a>
+
+  </section>
+<section class="links">
+  <div class="links-inner">
+  <ul >
+    <li><h4>Noi dung moi</h4></li>
+    <li><a href="#">Ung dung cho windows 10</a></li>
+    <li><a href="#">Cac ung dug cho Office</a></li>
+
+  </ul>
+  <ul >
+    <li><h3>Microsoft Store</h3></li>
+    <li><a href="#">Ho so tai khoan</a></li>
+    <li><a href="#">Trung tam Tai Xuong</a></li>
+    <li><a href="#">Tra lai</a></li>
+    <li><a href="#">Theo doi don hang</a></li>
+  </ul>
+  <ul >
+    <li><h3>Giao Duc</h3></li>
+    <li><a href="#">Microsoft trong giao duc</a></li>
+    <li><a href="#">Office 365</a></li>
+    <li><a href="#">Tra lai</a></li>
+  </ul>
+  <ul >
+    <li><h3>Doanh Nghiep</h3></li>
+    <li><a href="#">Microsoft Azure</a></li>
+    <li><a href="#">Microsoft Industry</a></li>
+    </ul>
+  <ul >
+    <li><h3>Nha Phat Trien</h3></li>
+    <li><a href="#">Microsoft Visual Studio</a></li>
+    <li><a href="#">Mang Luoi Nha pHat trien</a></li>
+    </ul>
+  <ul>
+    <li><h3>Cong Ty</h3></li>
+    <li><a href="#">Su Ngiep</a></li>
+    <li><a href="#">Gioi Thieu ve Microsoft</a></li>
+    </ul>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <ul ><i class="fas fa-globe-americas"><a href=""> Tieng Viet</a></i></ul>
+   
+   <ul ><a href="#">Lien He voi Microsoft </a></ul>
+   <ul > <a href="#"></a>Dieu Khoan ve quyen rieng tu</a></ul>
+   <ul ><a href="#"></a>Dieu Khoan su dung</a></ul>
+   <ul><a href="#"></a>Nhan hieu</a></ul>
+   <ul><a href="#"></a>Gioi thieu ve quang cao cua chung thoi</a></ul>
+    <ul>© Microsoft 2020</a>
+
+    </div>
+  
+</footer>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
